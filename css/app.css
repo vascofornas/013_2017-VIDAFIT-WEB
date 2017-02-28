@@ -1,0 +1,3810 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+html,
+body,
+label,
+input,
+textarea,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+ol,
+blockquote {
+  font-family: "museo-sans-rounded", sans-serif;
+  font-weight: 300;
+  color: #000000;
+  line-height: 1.6;
+}
+
+p.medium-size {
+  font-size: 24px;
+}
+
+p.medium-size span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p.heading-weight {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* Headers */
+  
+  h1,
+  h2 {
+    font-family: "alternate-gothic-no-1-d", impact;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  h3 {
+    font-weight: 500;
+  }
+
+  h2.truplan-header::before {
+    content:url("../images/update/icon-plan.jpg");
+    margin-right:15px;
+  }
+
+
+
+/* Links & Buttons */
+
+  a {
+    font-weight: 300;
+    color: #000000;
+    text-decoration: underline;
+    outline: none;
+  }
+  
+  a:hover,
+  a:active {
+    color: #000;
+  }
+  
+  .btn {
+    position: relative;
+    display: inline-block;
+    font-family: "alternate-gothic-no-1-d", impact;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e74f3a;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn:hover,
+  .btn:active {
+    background: #000;
+    color: #fff;
+  }
+  
+  .btn i {
+    font-style: normal;
+  }
+  
+  .btn img.spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .btn.loading i {
+    visibility: hidden;
+  }
+  
+  .btn.loading img.spinner {
+    display: block;
+  }
+  
+  .btn-secondary {
+    font-family: "museo-sans-rounded", sans-serif;
+    display: inline-block;
+    border: 1px solid #e74f3a;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: none;
+    background: #fff;
+  }
+  
+  .btn-secondary:hover,
+  .btn-secondary:active {
+    border-color: #000;
+    background: #fff;
+  }
+  
+  .btn-secondary:hover span,
+  .btn-secondary:hover i,
+  .btn-secondary:active span,
+  .btn-secondary:active i {
+    color: #000;
+  }
+  
+  .btn-secondary span {
+    font-weight: 300;
+    vertical-align: middle;
+    color: #e74f3a;
+  }
+  
+  .btn-secondary i {
+    vertical-align: middle;
+    color: #e74f3a;
+  }
+
+  .btn.main-cta {
+    background: #e64f3a;
+    color:#fff;
+    font-size: 18px;
+    text-transform: none;
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 300;
+    width:auto;
+    padding-left:30px;
+    padding-right:30px;
+    border:1px solid #e64f3a;
+    padding-top:10px;
+    height:50px;
+  }
+
+  button.btn.main-cta,
+  button.btn.secondary-cta{
+    padding-top:0;
+  }
+
+  .btn.main-cta:hover,
+  .btn.main-cta:active {
+    background:#f05f4b;
+    color:#fff;
+    font-size: 18px;
+    border:1px solid #f05f4b;
+  }
+
+  .btn.secondary-cta {
+    background:rgba(255,255,255,0);
+    border:2px solid #e64f3a;
+    color:#e64f3a;
+    font-size: 18px;
+    text-transform: none;
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 300;
+    width:auto;
+    padding-left:30px;
+    padding-right:30px;
+    height:50px;
+    padding-top:10px;
+  }
+
+  .btn.secondary-cta:hover,
+  .btn.secondary-cta:active {
+    background:#e64f3a;
+    color:#fff;
+  }
+
+  .btn.app-store {
+    background:#000;
+    padding:5px 10px;
+    border-radius:10px;
+    border:1px solid rgba(173,173,173,0.3);
+  }
+
+  .btn.app-store img{
+    width:165px;
+  }
+
+  .btn.app-store:hover,
+  .btn.app-store:active {
+    background:#333;
+  }
+
+/* Forms */
+
+  form button {
+    margin: 20px 0 0 0;
+  }
+
+  form h3 {
+    position: relative;
+    margin: 50px 0 0 0;
+  }
+  
+  form h3 span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    color: #787878;
+    padding-right: 10px;
+  }
+  
+  form h3:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #dedede;
+  }
+
+  form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form ul li {
+    margin: 20px 0;
+  }
+  
+  form h4,
+  form ul li label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+  }
+  
+  form ul li label span.limit {
+    float: right;
+    color: #787878;
+    font-size: 13px;
+  }
+  
+  form ul li label span.limit_error {
+    color: #e74f3a;
+    font-weight: 600;
+  }
+  
+  form ul li input[type=file] {
+    line-height: 1ex;
+  }
+  
+  form ul li input[type=text],
+  form ul li input[type=email],
+  form ul li input[type=tel],
+  form ul li input[type=date],
+  form ul li input[type=number],
+  form ul li input[type=password],
+  form ul li textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 2.8rem;
+    -webkit-transition: border-color 0.2s ease;
+    -moz-transition: border-color 0.2s ease;
+    -o-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease;
+  }
+  
+  form ul li input[type=text]:focus,
+  form ul li input[type=email]:focus,
+  form ul li input[type=tel]:focus,
+  form ul li input[type=date]:focus,
+  form ul li input[type=number]:focus,
+  form ul li input[type=password]:focus,
+  form ul li textarea:focus {
+    border-color: #000;
+  }
+  
+  form ul li input[type=number]::-webkit-outer-spin-button,
+  form ul li input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  form ul li input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  form ul li textarea {
+    height: 400px;
+  }
+  
+  form ul li textarea.short {
+    height: 110px;
+  }
+  
+  form button {
+    vertical-align: middle;
+  }
+  
+  form ul li.date section {
+    display: table;
+    width: 100%;
+  }
+  
+  form ul li.date section aside {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+  }
+  
+  form ul li.date section aside.month {
+    width: 50%;
+    padding: 0;
+  }
+  
+  form ul li.date section aside.day,
+  form ul li.date section aside.year {
+    width: 25%;
+  }
+  
+  form ul.list li {
+    margin: 5px 0 0 0;
+  }
+
+  form ul.list li:first-child {
+    margin: 0;
+  }
+  
+  form ul.list li input,
+  form ul.list li label {
+    display: inline;
+    vertical-align: middle;
+    font-weight: 100;
+    font-size: 18px;
+  }
+
+  form ul.list li input {
+    margin: 0 5px 0 0;
+  }
+  
+  form ul li.inline {
+    display: table;
+  }
+  
+  form ul li.inline > input,
+  form ul li.inline > label {
+    display: inline;
+    vertical-align: middle;
+    font-weight: 100;
+  }
+  
+  form ul li.inline > input {
+    margin: 0 5px 0 0;
+  }
+  
+  form ul li.inline aside {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 20px;
+  }
+
+  form ul li.inline aside:first-child {
+    padding: 0;
+  }
+  
+  form ul li.inline aside label {
+    display: inline-block;
+    padding: 0 0 0 5px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 100;
+    vertical-align: middle;
+  }
+
+  form ul li.multiple section {
+    position: relative;
+    margin: 10px 0 0 0;
+  }
+
+  form ul li.multiple section:first-of-type {
+    margin: 0;
+  }
+  
+  form ul li.multiple section i {
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    font-size: 16px;
+    margin: -8px 0 0 0;
+    cursor: pointer;
+    color: #787878;
+  }
+  
+  form ul li.multiple section i:hover,
+  form ul li.multiple section i:focus {
+    color: #000;
+  }
+  
+  form ul li.multiple section:first-of-type i {
+    display: none;
+  }
+
+  form ul li.multiple a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  
+  form ul li.multiple a i {
+    margin: 0 5px 0 0;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #787878;
+  }
+  
+  form ul li.multiple a:hover i,
+  form ul li.multiple a:hover span,
+  form ul li.multiple a:focus i,
+  form ul li.multiple a:focus span {
+    color: #000;
+  }
+
+  form ul li.multiple a span {
+    font-size: 13px;
+    vertical-align: middle;
+    color: #787878;
+  }
+  
+  div.selector {
+    position: relative;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;    
+    margin: 0;
+    height: 2.8rem;
+    width: 100%!important;
+    cursor: pointer;
+    -webkit-transition: border-color 0.2s ease;
+    -moz-transition: border-color 0.2s ease;
+    -o-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease;
+  }
+  
+  div.selector.focus {
+    border-color: #000;
+  }
+  
+  div.selector span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2.8rem;
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  
+  div.selector select {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    width: 100% !important;
+    -webkit-appearance: menulist-button;
+    border: none;
+  }
+  
+  div.selector i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    bottom: 0;
+    font-size: 12px;
+    margin: -6px 0 0 0;
+  }
+
+  .error:not(input[type=file]) {
+    border-color: #e74f3a!important;
+    box-shadow: inset 0 0 0 1px #e74f3a;
+  }
+
+  h4.error,
+  label.error {
+    border: none;
+    box-shadow: none;
+    color: #e74f3a;
+  }
+  
+  span.message {
+    display: block;
+    vertical-align: middle;
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+    color: #e74f3a;
+    font-weight: 500;
+  }
+
+/* Cookies */
+
+  .cookies {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+  }
+  
+  .cookies a {
+    color: #fff;
+  }
+  
+  .cookies button {
+    display: inline-block;
+    padding: 0 10px;
+    border: none;
+    background: #787878;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 10px;
+  }
+
+/* Header */
+
+  header nav {
+    background: rgba(0,0,0,0.5);
+    height:100px;
+  }
+
+  .faq header,
+  .legal header {
+    height:100px;
+    background:#000 !important;
+    background-image:none;
+  }
+
+  nav.nav {
+    top:-100px;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: 0.5s;
+
+  }
+  
+  header nav.sticky {
+    background:rgba(0,0,0,1);
+    height:80px;
+  }
+
+  header .is-sticky nav {
+    border-bottom-color: #fff;
+    z-index: 100;
+  }
+  
+  header nav section.row aside.logo a {
+    display: table-cell;
+  }
+  
+  header nav section.row aside.logo a img {
+    display: block;
+    height:50px;
+  }
+
+  header nav.sticky section.row aside.logo a img {
+    height:40px;
+  } 
+
+  header section.hero section.row {
+    position: relative;
+  }
+
+  header section.hero.subtitle{
+    padding-top:112px;
+  }
+  header section.hero {
+    padding-top:140px;
+  }
+
+  header section.hero section.row h1 {
+    color:#fff;
+  }
+  
+  header section.hero section.row p {
+    color: #fff;
+  }
+  
+  header section.hero section.row a {
+    display: table-cell;
+  }
+  
+  header section.hero section.row a.btn {
+    display: inline-block;
+  }
+
+  header section.hero section.row a img {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  
+  header section.hero section.row aside img.picture,
+  header div.slides img.picture {
+    position: absolute;
+  }
+  
+  .slick-initialized .slick-slide {
+    overflow: hidden;
+  }
+  
+  header nav .row .nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .home header {
+    background-image:url(../images/update/hero-home.jpg);
+    background-size: cover;
+    height:600px;
+    position: relative;
+    background-position: center top;
+  }
+
+  .home header .scroll-down {
+    display:block;
+    position: absolute;
+    left:50%;
+    margin-left:-24px;
+    bottom:0;
+    line-height: 0;
+    z-index:10;
+  }
+
+  .home header .app-store-button-container{
+    width:912px;
+    margin-left:-456px;
+    left:50%;
+    position: absolute;
+    bottom:0;
+    height:80px;
+
+  }
+  .home header .app-store.corner {
+    bottom:40px;
+    display: block;
+    position: absolute;
+    right:0;
+    height:40px;
+    font-size:0px;
+    padding:0px;
+  }
+
+  .home header .app-store.corner img {
+    height:100%;
+    width:auto;
+  }
+
+  header {
+    background-size: cover;
+    height:450px;
+    background-position: top center;
+  }
+
+  .prices header {
+    background-image:url(../images/update/hero-prices.jpg);
+  }
+
+  .contact header {
+    background-image:url(../images/update/hero-contact.jpg);
+  }
+
+  .about header {
+    background-image:url(../images/update/hero-about.jpg);
+  }
+
+  .partner header {
+    background-image:url(../images/update/hero-partner.jpg);
+  }
+
+  .trainers header {
+    background-image:url(../images/update/hero-trainers.jpg);
+  }
+
+  .workouts header {
+    background-image:url(../images/update/hero-workouts.jpg);
+  }
+
+  .faq header {
+    background-image:url(../images/update/hero-faq.jpg);
+  }
+  .legal header {
+    background-image:url(../images/update/hero-legal.jpg);
+  }
+
+  .giftcard header {
+    background-image:url(../images/update/hero-home.jpg);
+  }
+
+  .referral header {
+    background-image:url(../images/update/hero-referral.jpg);
+  }
+/* Main */
+
+  main {
+    position: relative;
+    box-shadow: 0 0px 0 1px #fff;
+  }
+
+  main > section {
+    /*box-shadow: inset 0 1px 0 0 rgba(0,0,0,.1);*/
+    margin:100px 0 0 0;
+    padding:0;
+  }
+  
+  main > section:first-child {
+    box-shadow: none;
+  }
+  
+  main > section.ready {
+    background: #e6e5db url(../images/user-ready.jpg) 0 0 / cover no-repeat;
+  }
+  
+  main > section.big {
+    padding: 200px 0;
+  }
+  
+  main > section.big {
+    display: none;
+  }
+  
+  main > section.basic h3 {
+    font-weight: 700;
+  }
+  
+  main > section blockquote {
+    margin: 0;
+  }
+  
+  main > section blockquote img {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 30px 0 0;
+    float: left;
+  }
+  
+  main > section blockquote p {
+    font-size: 16px;
+    color: #787878;
+    margin: 5px 0;
+  }
+  
+  main > section blockquote cite {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+  }
+  
+  main > section p.intro {
+    text-align: center;
+  }
+  
+  main > section aside.picture img {
+    display: block;
+    width: 100%;
+    max-width: 399px;
+    height: auto;
+    margin: auto;
+  }
+  
+  main > section aside.text > ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: li;
+  }
+
+  main > section aside.text > ol li {
+    display: table;
+    width: 100%;
+  }
+  
+  main > section aside.text > ol li::before {
+    counter-increment: li;
+    content: counter(li);
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #b9b9b9;
+    border-radius: 100%;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #b9b9b9;
+  }
+
+  main > section aside.text > ol li span {  
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  main > section aside.text > ol li span img,
+  main > section aside.text > ol li span h3,
+  main > section aside.text > ol li span p {
+    margin: 0 0 0 20px;
+    font-size: 16px;
+  }
+
+  main > section aside.text > ol li span p {  
+    color: #787878;
+  }
+  
+  main > section.contact section.row,
+  main > section.about section.row {
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+  }
+  
+  main > section.contact section.row h3,
+  main > section.contact section.row p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  main > section.contact section.row p {
+    margin: 0 0 30px 0;
+    color: #787878;
+  }
+
+  main > section.contact section.row p a {
+    color: #787878;
+    font-weight: 100;
+  }
+  
+  main > section.contact section.row p a:hover,
+  main > section.contact section.row p a:focus {
+    color: #000;
+  }
+  
+  main > section.contact section.row ul.social {
+    list-style: none;
+    margin: 0 0 50px 0;
+    padding: 10px 0 0 0;
+    display: table;
+  }
+  
+  main > section.contact section.row ul.social li {
+    display: table-cell;
+    padding: 0 10px 0 0;
+  }
+  
+  main > section.contact section.row ul.social li a {
+    text-decoration: none;
+    border: 1px solid #b9b9b9;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    text-indent: 5px;
+  }
+  
+  main > section.contact section.row ul.social li a:hover,
+  main > section.contact section.row ul.social li a:focus {
+    border-color: #000;
+  }
+
+  main > section.about section.row article.team {
+    margin: 0 0 90px 0;
+    text-align: center;
+  }
+  
+  main > section.about section.row article.team span {
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+  }
+
+  main > section.about section.row article.team span.picture {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  main > section.about section.row article.team span.picture img {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  main > section.about section.row article.team span.text p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #787878;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
+  main > section.about section.row article.team span h3 {
+    font-weight: 600;
+  }
+  
+  main > section.about section.row article.team span h4 {
+    font-weight: 500;
+  }
+  
+  main > section.about section.row article.team span h3,
+  main > section.about section.row article.team span h4 {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  main > section.about section.row article.team span h4 {  
+    color: #787878;
+  }
+  
+  main > section.benefits section.row aside.benefit p {
+    color: #787878;
+    font-size: 16px;
+  }
+  
+  main > section.basic ul li {
+    margin: 1em 0;
+  }
+  
+  main > section.workout section.row {
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+  }
+  
+  main > section.workout section.row aside.video img {
+    display: block;
+  }
+  
+  main > section.workout section.row aside.video .container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+  }
+
+  main > section.workout section.row aside.video .container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  main > section.workout section.row ul {
+    padding: 0 0 0 15px;
+  }
+  
+  main > section.workout section.row aside.details p,
+  main > section.workout section.row aside.details ul li {
+    color: #787878;
+  }
+  
+  main > section.workout section.row h2:first-child,
+  main > section.contact section.row h2:first-child,
+  main > section.about section.row h2:first-child {
+    margin-top: 0;
+  }
+  
+  main > section.filter {
+    position: relative;
+  }
+  
+  main > section.filter p {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  main > section.filter p span {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff;
+    font-size: 14px;
+    color: #787878;
+  }
+  
+  main > section.filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+  }
+  
+  .ie9 main > section.filter ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  main > section.filter ul li {
+    text-align: center;
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+  }
+  
+  .ie9 main > section.filter ul li {
+    display: table-cell;
+  }
+
+  main > section.filter ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  main > section.filter ul li a img {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  
+  main > section.filter ul li a span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  main > section.empty {
+    display: none;
+    text-align: center;
+  }
+
+  main > section.trainer {
+    box-shadow: none;
+    padding-top: 0;
+  }
+
+  main > section.trainer > img.spinner {
+    display: block;
+    margin: auto;
+  }
+
+  main > section.empty section.row,
+  main > section.trainer section.group section.row {
+    padding: 25px 0;
+  }
+  
+  main > section.empty section.row h2,
+  main > section.trainer section.group section.row h2 {
+    font-size: 40px;
+  }
+
+  main > section.empty section.row p,  
+  main > section.trainer section.group section.row p {
+    font-size: 16px;
+  }
+  
+  main > section.trainer section.group section.row img {
+    border-radius: 100%;
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    margin: auto;
+  }
+  
+  main > section.more {
+    box-shadow: none;
+    padding-top: 0;
+    text-align: center;
+  }
+  
+  main > section.press-logos {
+    padding-bottom:100px;
+  }
+  
+  .home main > section.press-logos {
+    padding-bottom:0;
+  }
+
+  main > section.press-logos h2 {
+    margin-bottom:30px;
+  }
+  
+  main > section.press-logos p{
+    margin-top:0;
+  }
+
+  main > section.press-logos .row aside {
+    vertical-align: top;
+  }
+
+  main > section.press-logos .press-comment {
+    min-height: 185px;
+  }
+
+  main > section.press-logos .logos {
+    margin-top:25px;
+    padding-top:25px;
+    border-top:1px solid #e5e5e5;
+  }
+
+  main > section.workouts-list{
+
+  }
+
+  main > section.workouts-list h2{
+    margin-bottom:30px;
+  }
+
+  main > section.workouts-list ul{
+    list-style: none;
+    margin:0 0 30px 0;
+    padding:0;
+  } 
+  
+  main > section.workouts-list ul li {
+    text-align: center;
+    width:80px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom:10px;
+  } 
+
+  main > section.workouts-list ul li p {
+    margin-top:10px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  main > section.workouts-list ul li .workout-icon-conatiner{
+    padding:15px;
+    height:72px;
+    width:72px;
+    border-radius:36px;
+    border:1px solid #dedfe0;
+    margin:0 auto;
+  }
+
+  main > section.text-on-image {
+    height:750px;
+    background-size:cover;
+    padding:0;
+    margin:20px 0;
+  }
+
+  main > section.text-on-image .text-container {
+    background:rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding:60px;
+    margin-top:220px;
+  }
+
+  main > section.text-on-image h2 {
+    font-size: 50px;
+    color:#000;
+  }
+
+  main > section.text-on-image p{
+    margin-bottom:0;
+    font-size: 16px;
+    color:#787878;
+  }
+
+  main > section.text-on-image .btn {
+    margin-top:20px;
+  }
+
+  main > section.text-on-image.trube-comes {
+    background-image:url(../images/update/trube-comes-to-you.jpg);
+  }  
+
+  main > section.text-on-image.highly-qualified {
+    background-image:url(../images/update/highly-qualified.jpg);
+  }
+
+
+  main > section.no-more-excuses {
+    height:620px;
+    background-image: url(../images/update/no-more-excuses.jpg);
+    background-size: cover;
+    padding:0;
+    margin-bottom: 0;
+  }
+
+  main > section.no-more-excuses.short {
+    height:400px;
+    margin-top:0;
+    margin-bottom: 0;
+    background-position: center center;
+  }
+
+  main > section.no-more-excuses.short h2 {
+    margin-top: 136px;
+  }
+  main > section.no-more-excuses h2{
+    margin-top:246px;
+  }
+
+  main > section.no-more-excuses h2,
+  main > section.no-more-excuses p{
+    color:#fff;
+  }
+
+  main > section.no-more-excuses aside.text p {
+    margin:0 0 30px 0;
+    font-size: 20px;
+  }
+
+  main > section.steps {
+
+  }
+
+  main > section.steps aside.text > ol li span h3 {
+    font-size: 20px;
+  }
+
+  main > section.steps aside.text > ol li span p {
+    font-size: 16px;
+  }
+
+  main > section.steps aside.picture img {
+    max-width: none;
+  }
+
+  main > section.steps aside.text > ol li::before {
+    color:#e64f3a;
+  }
+
+  main > section.testimonials {
+    background-image: url("../images/update/testimonials.jpg");
+    background-size: cover;
+    height:745px;
+    padding-top:180px;
+  }
+
+  main > section.testimonials h2,
+  main > section.testimonials p{
+    color:#fff;
+  }
+
+  main > section.testimonials aside.text p {
+    margin: 10px 0 50px 0;
+  }
+
+  main > section.testimonials .testimonial-container:before {
+    content:url("../images/update/quotes.png");
+    display: block;
+    font-family: "alternate-gothic-no-1-d", impact;
+    color:#43c694;
+    line-height: 0;
+    
+    margin-bottom:20px;
+  }
+
+  main > section.testimonials .testimonial-container {
+    background:rgba(255,255,255,0.9);
+    border-radius: 10px;
+    margin:0 20px;
+    padding:50px 45px 60px 45px;
+  }
+
+  main > section.testimonials .testimonial-container p{
+    margin-top:0;
+  }
+
+  main > section.testimonials .testimonial-container p {
+    font-size: 20px;
+    font-weight: 300;
+    color:#000;
+    line-height: 1.3;
+  }
+
+  main > section.testimonials .testimonial-container p.author {
+    font-weight: 500;
+  }
+
+  main > section.instagram {
+    padding: 0;
+  }
+
+  main > section.instagram h2::before {
+    content: url("../images/update/icon-instagram.jpg");
+    margin-right:20px;
+  }
+
+  main > section.instagram h2 {
+    color:#e64f3a;
+    margin-bottom:35px;
+  }
+
+  main > section.instagram .insta-image {
+    width:33%;
+    padding:0.5%;
+    display:inline-block;
+  }
+
+  main > section.instagram .insta-image img{
+    width:100%;
+  }
+
+  main > section.single-line-text-button {
+    border-top: 1px solid #e5e5e5;
+    padding-top:40px;
+    margin-bottom: 40px;
+  }
+  main > section.single-line-text-button p{
+    margin:0;
+  }
+  main > section.four-column-module {
+    border-bottom: 1px solid #e5e5e5;
+    margin-top:50px;
+  }
+  main > section.four-column-module h3 {
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin:0 0 35px 0;
+    padding:0;
+  }
+  main > section.four-column-module p{
+    margin: 0;
+    color:#787878;
+  }
+
+  main > section.four-column-module p.heading-weight {
+    color:#000;
+  }
+
+  main > section.four-column-module .row{
+    align-items:flex-start;
+    -webkit-align-items:flex-start;
+  }
+
+  main > section.four-column-module .reason {
+    padding: 10px 20px 0 20px;
+    border-right:1px solid #e5e5e5;
+    min-height: 260px;
+
+  }
+
+  main > section.four-column-module aside:last-child .reason {
+    border-right: none;
+  }
+
+  main > section.four-column-module img {
+    height:40px;
+  }
+  main > section.get-truplan aside.text > p{
+    margin-bottom:20px;
+    margin-top:0;
+  }
+  main > section.get-truplan {
+    margin-bottom: 50px;
+  }
+  main > section.get-truplan p {
+    color:#787878;
+  }
+
+  main > section.get-truplan ul.price-table {
+    margin:0;
+    padding:0;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item {
+    display: inline-block;
+    width:33%;
+    border-radius:10px;
+    border:2px solid #e64f3a;
+    min-height: 445px;
+    margin-bottom:30px;
+
+  }
+
+  main > section.get-truplan ul.price-table li.price-item .item-header{
+    background:#e64f3a;
+    padding:30px 0;
+  }
+
+   main > section.get-truplan ul.price-table li.price-item .item-header p {
+    margin:0;
+    font-family: "alternate-gothic-no-1-d", impact;
+    font-size: 30px;
+    color:#fff;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item .item-header p span {
+    font-size: 90px;
+    display: block;
+    font-family: "alternate-gothic-no-1-d", impact;
+    color:#fff;
+    line-height: 0.8;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item  .item-body {
+    padding:30px 10% 40px 10%;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item  .item-body p {
+    color:#787878;
+    margin:0;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item .item-body p.price {
+    font-size: 30px;
+    font-family: "alternate-gothic-no-1-d", impact;
+    color:#e64f3a;
+    margin-top:30px;
+    line-height: 0.9;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item .item-body p.price span{
+    font-size: 70px;
+    font-family: "alternate-gothic-no-1-d", impact;
+    color:#e64f3a;
+    line-height: 0.7;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item .item-body p.small-text {
+    color:#e64f3a;
+    font-size: 14px;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item .item-body p.teaser-text {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top:20px;
+    color:#000;
+  }
+
+  main > section.get-truplan ul.price-table li.price-item .item-body p.teaser-text span {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  main > section.get-truplan p.disclaimer-text, p.disclaimer-text {
+    font-size: 12px;
+    margin-top:0px;
+    color: #787878;
+  }
+
+  main > section.price-table-single {
+
+  }
+  main > section.price-table-single .text p{
+    margin-top:0;
+    color:#787878;
+    margin-bottom:20px;
+  }
+  main > section.price-table-single .price-item{
+    border:2px solid #e64f3a;
+    width:100%;
+    border-radius: 10px;
+    padding:40px 50px;
+  }
+
+  main > section.price-table-single .price-item p {
+    color:#787878;
+    margin:0;
+  }
+  
+  main > section.price-table-single .price-item .item-body {
+    width:70%;
+    display: inline-block;
+  }
+
+  main > section.price-table-single .price-item .item-price {
+    width:29%;
+    display: inline-block;
+    text-align: right;
+    padding-left:35px;
+  }
+  
+  main > section.price-table-single .price-item .body-heading {
+    font-size: 50px;
+    display: block;
+    font-family: "alternate-gothic-no-1-d", impact;
+    color:#e64f3a;
+    line-height: 0.8;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  main > section.price-table-single .price-item .item-price p.price,
+  main > section.price-table-single .price-item .item-price p span{
+    color:#e64f3a;
+    font-family: "alternate-gothic-no-1-d", impact;
+    font-size: 30px;
+    line-height: 0.3;
+    text-align: center;
+  }
+
+  main > section.price-table-single .price-item .item-price p span {
+    font-size: 70px;
+    line-height: 0.6;
+  }
+
+  main > section.price-table-single .price-item .item-price p span::after{
+    content: " ";
+    display: block;
+    height:0;
+  }
+
+  main > section.price-table-single .price-item .item-price .small-text {
+    color:#e64f3a;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top:0px;
+    text-align: center;
+  }
+
+  main > section.price-table-single .row.second {
+    margin-bottom:15px;
+  }
+
+  main > section.form-section .row {
+    padding-bottom:50px;
+    border-bottom:1px solid #ccc;
+  }
+
+  #instafeed {
+    padding:0 30px;
+  }
+
+  section.signup {
+    padding:50px 0;
+  }
+
+  section.signup input{
+    border:1px solid #e5e5e5;
+    border-radius: 5px;
+    width:100%;
+    font-size: 18px;
+    height: 60px;
+    padding:0px 20px; 
+  }
+
+  section.signup button.main-cta{
+    height:60px;
+    margin:0;
+    width:100%;
+    margin-left:10px;
+  }
+ 
+  .colour-coral {
+	  color: #e64f3a; 
+  }
+
+
+/* Footer */
+
+  body.home footer,
+  footer {
+    position: relative;
+    background:#000;
+    box-shadow: inset 0 1px 0 0 rgba(0,0,0,.1);
+  }
+
+  footer a, 
+  footer a span {
+    color:#fff;
+    text-decoration: underline;
+  }
+  footer a:hover,
+  footer a:focus,
+  footer a:hover span,
+  footer a:focus span {
+    color:#dedfe0;
+    text-decoration: none;
+  }
+
+  footer p {
+    margin: 30px 0 0 0;
+    color: #787878;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  footer p a {
+    color: #787878;
+    font-weight: 100;
+    margin: 0 5px;
+    text-decoration: underline;
+  }
+
+  footer p a:hover, 
+  footer p a:focus {
+    color:#fff;
+    text-decoration: underline;
+  }
+  
+  footer h4 {
+    color: #787878;
+  }
+  
+  footer h4,
+  footer ul li,
+  footer ul li span {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer ul li {
+    margin: 10px 0;
+  }
+  
+  footer ul li.menu-item-object-category {
+    display: none;
+  }
+  
+  footer ul.social li a {
+    text-decoration: none;
+  }
+  
+  footer ul.social li a i {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+  }
+  
+  footer span.logo,
+  footer span.tagline {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  footer span.logo img {
+    display: block;
+  }
+
+  footer span.tagline {
+    padding: 0 0 0 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .referral header div
+  {
+    background:#fff;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    position:absolute;
+    bottom:-85px;
+    left:50%;
+    margin-left:-85px;
+  }
+  .referral header div img
+  {
+    width:82px;
+    height:97px;
+    margin:38px 0 0 45px;
+  }
+
+  .referral h1.referral-header {
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    word-spacing: normal;
+    margin-top:135px;
+  }
+
+  .referral .referral-code-container
+  {
+    background-color:rgba(237,239,239,1); 
+    border-radius:10px;
+    padding-top:15px;
+    padding-bottom:10px;
+  }
+
+  .referral .referral-code-container p
+  {
+    margin:0;
+    padding:0;
+  }
+
+  .referral .referral-code-container .code-title
+  {
+    background-color:rgba(237,239,239,1); 
+    border-radius:5px;
+  }
+
+  .referral .referral-code-container .code
+  {
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+  }
+
+  .referral .referral-download-container
+  {
+    padding-top:30px;
+    padding-bottom:100px;
+  }
+
+  .referral .steps
+  {
+    border-top:1px solid rgba(221,223,223,1);
+    padding-top:120px;
+    border-bottom:1px solid rgba(221,223,223,1);
+    padding-bottom:120px;
+  }
+
+  .referral .truplan-strapline-two
+  {
+    font-size:24px;
+    color: #000; 
+    word-spacing: normal;
+    margin-bottom:20px;
+  }
+
+  .referral .truplan-strapline-two span
+  {
+    font-size:24px;
+    color: #000; 
+    word-spacing: normal;
+    margin-bottom:20px;
+    font-weight:700;
+  }
+
+  .referral main > section aside.picture img
+  {
+    max-width: 100%;
+  }
+
+/* Responsive */
+
+  @media all and (max-width: 660px) {
+      
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 16px;
+    }
+    
+    .desktop-only {display: none !important;}
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 27px;
+        padding: 0px 10px;
+        height:60px;
+      }
+      
+      .btn img.spinner {
+        width: 27px;
+        height: 27px;
+        margin: -14px 0 0 -14px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 18px;
+        padding: 7px 22px;
+      }
+      
+      .btn-secondary span {
+        font-size: 18px;
+      }
+      
+      .btn-secondary i {
+        font-size: 18px;
+        margin: 0 0 0 7px;
+      }
+      
+      .download {
+        height: 40px;
+      }
+
+    /* Links */
+    
+      form ul li input[type=text],
+      form ul li input[type=email],
+      form ul li input[type=tel],
+      form ul li input[type=date],
+      form ul li input[type=number],
+      form ul li input[type=password],
+      form ul li textarea {
+        padding: 10px;
+      }
+    
+      form ul li textarea {
+        height: 200px;
+      }
+
+    /* Header */
+      
+      header section.hero,
+      header section.hero.subtitle {
+        overflow: hidden;
+        padding-top:65px;
+      }
+
+      header section.hero .row {
+        padding:0;
+      }
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 70px;
+        word-spacing: -10px;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 20px;
+        margin: 0 0 30px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        padding: 0px;
+      }
+
+      header div.slides section.row {
+        width: 100%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        display: none;
+        position: static;
+        width: 100%;
+        margin-bottom: -30px;
+      }
+
+      .home header { 
+        background-image: url("../images/update/hero-home-mobile.jpg");
+        height:460px;
+      }
+      .home header section.hero {
+        padding-top:60px;
+      }
+      .home header section.hero p {
+        padding-left:30px;
+        padding-right:30px;
+      }
+      .home header .hero .row{
+        margin-top:0;
+      }
+    
+    /* Navigation */
+      header nav {
+        background:none;
+        height:70px;
+      }
+      .faq header,
+      .legal header {
+        height:70px;
+      }
+      header nav .row {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        position: relative;
+        width: 100%;
+        z-index:20;
+      }
+      
+      header nav .row label[for="nav-trigger"] {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        z-index: 2;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        background: url(../images/menu.svg) 0 0 / contain no-repeat;
+      }
+      
+      header nav .row .nav-trigger:checked ~ aside.menu {
+        display: block!important;
+      }
+      
+      header nav .row .nav-trigger:checked + label {
+        background: url(../images/menu-close.svg) 0 0 / contain no-repeat;
+      }
+  
+      header nav .row aside.logo {
+        width: 100%;
+        padding: 10px;
+        background: rgba(0,0,0,0.7);
+      }
+
+      header nav .row .nav-trigger:checked ~ aside.logo {
+        background:#000;
+      }
+
+      header nav section.row aside.logo a img {
+        height:45px;
+      }
+      
+      header nav .row aside.menu {
+        display: none;
+        background: #000;
+        width: 100%;
+      }
+      
+      header nav .row aside.menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header nav .row aside.menu ul li {
+        text-align: center;
+      }
+      
+      header nav .row aside.menu ul li a {
+        display: block;
+        padding: 20px 0;
+        color: #fff;
+        text-decoration: none;
+        border-top: 1px solid #282828;
+      }
+
+
+      header {
+        background-size: cover;
+        height:270px;
+      }
+
+      .prices header {
+        background-image:url(../images/update/hero-prices-mobile.jpg);
+      }
+
+      .contact header {
+        background-image:url(../images/update/hero-contact-mobile.jpg);
+      }
+
+      .about header {
+        background-image:url(../images/update/hero-about-mobile.jpg);
+      }
+
+      .partner header {
+        background-image:url(../images/update/hero-partner-mobile.jpg);
+      }
+
+      .workouts header {
+        background-image:url(../images/update/hero-workouts-mobile.jpg);
+      }
+
+      .faq header {
+        background-image:url(../images/update/hero-faq-mobile.jpg);
+      }
+      .legal header {
+        background-image:url(../images/update/hero-legal-mobile.jpg);
+      }
+
+      .giftcard header {
+        background-image:url(../images/update/hero-home-mobile.jpg);
+      }
+    
+    /* Sub Navigation */
+    
+      nav.sub {
+        text-align: center;
+      }
+      
+      nav.sub section.row aside.logo {
+        text-align: center;
+        padding: 30px 0 0 0;
+      }
+      
+      nav.sub section.row aside.logo a img {
+        display: block;
+        margin: auto;
+      }
+      
+      nav.sub section.row aside.search div.widget_search form {
+        margin: 30px;
+        margin-bottom: 1px;
+      }
+
+      nav.sub section.row aside.menu ul {
+        display: none;
+      }
+    
+    /* Main */
+
+      main > section {
+        padding: 0 30px;
+        margin:75px 0 0 0;
+      }
+      
+      main > section.crop {
+        padding-bottom: 0;
+      }
+      
+      main > section.press {
+        padding: 50px 0;
+      }
+      
+      main > section aside.message {
+        padding: 0;
+      }
+      
+      main > section blockquote {
+        text-align: center;
+      }
+      
+      main > section blockquote img {
+        float: none;
+        margin: auto;
+      }
+      
+      main > section blockquote cite {
+        margin: 20px 0 0 0;
+      }
+    
+      main > section p.intro {
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 30px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 44px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 18px;
+        margin: 10px 0 30px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 15px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 15px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        display: inline-block;
+        font-size: 20px;
+        width: 50px;
+        line-height: 50px;
+      }
+      
+      main > section aside.text > ol li span {
+        display: inline-block;
+      }
+      
+      main > section.about section.row article.team,
+      main > section.benefits section.row aside.benefit {
+        text-align: center;
+        padding: 20px;
+      }
+      
+      main > section.about section.row article.team {
+        margin: 15px 0;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 20px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 40px;
+        margin: 25px 0;
+      }
+
+      main > section.ready {
+        background-image: none;
+      }
+      
+      main > section.ready aside:empty {
+        display: none;
+      }
+    
+      main > section.thanks section.row h1 {
+        font-size: 40px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 20px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 40px;
+        margin: 0 0 25px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 30px;
+        margin: 25px 0;
+      }
+
+      main > section.workout section.row aside.details {
+        margin: 30px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.workout aside:empty {
+        display: none;
+      }
+      
+      main > section.workout section.row aside.video img {
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+      }
+      
+      main > section.filter ul {
+        flex-direction: column;
+      }
+      
+      main > section.filter ul li a img {
+        display: none;
+      }
+
+      main > section.filter ul li a span {
+        display: block;
+        padding: 10px 0;
+      }
+
+      main > section.text-on-image {
+        height:auto;
+      }
+
+      main > section.text-on-image .text-container{
+        margin-top:0px;
+        padding:20px;
+      }  
+
+      main > section.text-on-image.trube-comes {
+        margin-top: 75px;
+      }
+  
+      main > section.text-on-image.trube-comes,
+      main > section.no-more-excuses,
+      main > section.text-on-image.highly-qualified {
+        background:none;  
+      }
+
+      main > section.text-on-image.trube-comes .mobile-only,
+      main > section.no-more-excuses .mobile-only,
+      main > section.text-on-image.highly-qualified .mobile-only {
+        width:100%;
+      }
+
+      main > section.testimonials {
+        background-image: url("../images/update/testimonials-mobile.jpg");
+        height:auto;
+        padding-top:50px;
+      }
+
+      main > section.no-more-excuses {
+        background-image: url("../images/update/no-more-excuses-mobile.jpg");
+        height:918px;
+      }
+
+      main > section.no-more-excuses h2 {
+        margin-top:310px;
+      }
+
+      main > section.testimonials .testimonial-container{
+        padding:25px;
+        margin-bottom:10px;
+      }
+
+      main > section.press-logos .press-comment {
+        min-height: 0;
+        margin-bottom:10px;
+        padding:0 20px;
+      }
+
+      main > section.press-logos .press-comment p {
+        margin-top:-10px;
+      }
+
+      main > section.press-logos {
+        padding:0 0 50px 0;
+      }
+
+      main > section.press-logos .col-1 {
+        display: none !important;
+      }
+      
+      main > section.press-logos .col-2 {
+        width:49% !important;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      main > section.get-truplan ul.price-table li.price-item {
+        display: block;
+        width:100%;
+      }
+
+      main > section.four-column-module h3 {
+        margin:0;
+      }
+
+      main > section.four-column-module .reason {
+        border-right:none;
+        min-height: 0;
+        padding:10px 0;
+      }
+
+      
+
+      main > section.single-line-text-button a {
+        margin-top:25px;
+      }
+
+      main > section.single-line-text-button p.medium-size span{
+        display: block;
+      }
+
+      main > section.no-more-excuses {
+        height:400px;
+        background-image: url(../images/update/no-more-excuses-short-mobile.jpg);
+        background-size: cover;
+        padding-top:112px;
+      }
+
+      main > section.no-more-excuses.short h2,
+      main > section.no-more-excuses h2 {
+        margin-top:0;
+      }
+
+      main > section.get-truplan ul.price-table li.price-item .item-header {
+        padding:23px 0;
+      }
+
+      main > section.get-truplan ul.price-table li.price-item .item-header p, 
+      main > section.get-truplan ul.price-table li.price-item .item-body p.price{
+        font-size: 32px;
+      }
+      main > section.get-truplan ul.price-table li.price-item .item-header p span,
+      main > section.get-truplan ul.price-table li.price-item .item-body p.price span {
+        font-size: 60px;
+      }
+
+      section.signup input,
+      section.signup button.main-cta {
+        width:90%;
+        margin-left:0;
+        margin-bottom: 5px;
+      }
+      
+    /* Footer */
+    
+      footer > section {
+        padding: 30px;
+      }
+      
+      footer p {
+        font-size: 16px;
+        margin: 30px 0 0 0;
+      }
+      
+      footer p a {
+        margin: 0;
+      }
+      
+      footer aside {
+        margin: 30px 0 0 0;
+      }
+      
+      footer aside:empty {
+        display: none;
+      }
+
+      footer aside:first-child {
+        margin: 0;
+      }
+
+      footer .middle-col {
+        margin-top:0;
+      }
+      footer .middle-col h4 {
+        display:none !important;
+      }
+      
+      .referral h1.referral-header {
+        font-size: 45px;
+        margin-top:70px;
+      }
+
+      .referral header div
+      {
+        background:#fff;
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        position:absolute;
+        bottom:-50px;
+        left:50%;
+        margin-left:-50px;
+      }
+      .referral header div img
+      {
+        width:47.5px;
+        height:56px;
+        margin:22px 0 0 25.5px;
+      }
+      .referral .btn.main-cta
+      {
+        width:100%;
+      }
+
+      .referral .referral-download-container
+      {
+        padding-top:10px;
+      }
+  }
+  
+  @media all and (max-width: 460px) {
+    
+
+    main > section aside.text h2, 
+    main > section.text-on-image h2 {
+      font-size:34px;
+    }
+
+    main > section.testimonials {
+      padding:40px 20px;
+    }
+    
+    main > section.testimonials .testimonial-container {
+      padding:25px 5px;
+      margin: 0 0 10px 0;
+    }
+
+    main > section.testimonials .text p {
+      font-size:16px;
+    }
+
+    main > section.four-column-module{
+      padding-bottom:50px;
+    }
+
+
+    main > section.single-line-text-button p.medium-size,
+    main > section.single-line-text-button p.medium-size span{
+      font-size: 20px;
+    }
+    /* Header */
+      
+      header section.hero section.row h1 {
+        font-size: 45px;
+        word-spacing: 0;
+        color:#fff;
+        padding:0 20px;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      
+    /* Main */
+    
+      main > section.thanks section.row h1 {
+        font-size: 73px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 20px;
+      }
+
+      main > section aside.text > ol li::before {
+        width:40px;
+        line-height: 40px;
+      }
+      main > section aside.text > ol li span {
+        width:80%;
+      }
+      main > section.steps h2 {
+        margin-top:20px;
+      }
+      main > section.text-on-image {
+        margin-bottom:60px;
+        margin-top:60px;
+      }
+
+      main > section.no-more-excuses {
+        height:455px;
+        background-image: url(../images/update/no-more-excuses-mobile.jpg);
+        padding-top:145px;
+      }
+
+      main > section.four-column-module h3 {
+        font-size: 24px;
+      }
+  }
+  
+  @media all and (min-width: 461px) and (max-width: 560px) {
+    
+
+    .home header .app-store-button-container{
+    width:461px;
+  }
+
+
+    /* Header */
+
+
+      header section.hero section.row h1 {
+        font-size: 50px;
+        word-spacing: 0;
+        color:#fff;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 20px;
+      }
+      
+    /* Main */
+    
+      main > section.thanks section.row h1 {
+        font-size: 81px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 20px;
+      }
+    
+  }
+  
+  @media all and (min-width: 561px) and (max-width: 660px) {
+    
+
+    .home header .app-store-button-container{
+      width:561px;
+    }
+
+    /* Header */
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 50px;
+        word-spacing: 0;
+        color:#fff;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        /*font-size: 24px;*/
+      }
+      
+    /* Main */
+    
+      main > section.thanks section.row h1 {
+        font-size: 90px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 22px;
+      }
+    
+  }
+  
+  @media all and (max-width: 720px) {
+    main > section.price-table-single .price-item .item-body,
+      main > section.price-table-single .price-item .item-price {
+        width:100%;
+      }
+
+      main > section.price-table-single .price-item {
+        padding:0 0 40px 0;
+        text-align: center;
+      }
+
+      main > section.price-table-single .price-item .item-body p {
+        font-size:14px;
+        padding:25px 30px;
+      }
+
+      main > section.price-table-single .price-item .item-body p.body-heading {
+        background:#e64f3a;
+        color:#fff;
+        padding:23px 0;
+        margin:0;
+        font-size: 32px;
+      }
+
+      main > section.price-table-single .price-item .item-price {
+        text-align: center;
+        padding:0;
+      }
+
+      main > section.price-table-single .price-item .item-price p span::after{
+        content: " ";
+        display: none;
+        height:0;
+      }
+  }
+
+  @media all and (min-width: 661px) {
+    .mobile-only {display:none !important;}
+    /* Forms */
+
+    .home header .app-store-button-container{
+      width:661px;
+    }
+    
+      span.message {
+        display: inline-block;
+        padding: 0 20px;
+      }
+    
+    /* Header */
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 70px;
+        word-spacing: 0px;
+        color:#fff;
+        line-height: 0.5;
+      }
+    
+      header div.slides section.row {
+        margin: auto;
+        position: relative;
+      }
+
+      .home header section.hero {
+        padding-top:150px;
+      }
+    
+    /* Navigation */
+    
+      header nav {
+        padding: 25px 0;
+      }
+
+      header nav.sticky{
+        padding:20px 0;
+      }
+
+      header nav section.row aside.menu ul {
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      header nav section.row aside.menu ul li {
+        display: inline;
+        margin: 0 0 0 20px;
+      }
+
+      header nav section.row aside.menu ul li.separated {
+        padding:0 0 0 20px;
+        border-left:1px solid #a6a6a6;
+      }
+      
+      header nav section.row aside.menu ul li.menu-item-object-category {
+        display: none;
+      }
+      
+      header nav section.row aside.menu ul li a {
+        font-size: 15px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      
+      header nav section.row aside.menu ul li a:hover,
+      header nav section.row aside.menu ul li a:focus {
+        color: #e64f3a;
+      }
+      
+      header nav section.row aside.menu ul li.normal a {
+        text-transform: none;
+      }
+    
+    /* Sub Navigation */
+      
+      nav.sub {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 1px;
+      }
+
+      nav.sub section.row aside.social {
+        text-align: right;
+      }
+      
+      nav.sub section.row aside.social ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        vertical-align: middle;
+      }
+
+      nav.sub section.row aside.social ul li {
+        display: table-cell;
+      }
+
+      nav.sub section.row aside.social ul li a {
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #b9b9b9;
+        width: 47px;
+        height: 47px;
+        line-height: 50px;
+        font-size: 24px;
+        text-align: center;
+        border-radius: 100px;
+        color: #787878;
+      }
+
+      nav.sub section.row aside.social ul li a i {
+        margin: 0 -5px 0 0;
+      }
+      
+      nav.sub section.row aside.social ul li a span {
+        display: none;
+      }
+      
+      nav.sub section.row aside.logo {
+        text-align: center;
+        padding: 30px 0;
+      }
+      
+      nav.sub section.row aside.logo a img {
+        display: block;
+        height: 100px;
+      }
+      
+      nav.sub section.row aside.menu {
+        position: relative;
+      }
+      
+      nav.sub section.row aside.menu > ul {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav.sub section.row aside.menu > ul > li {
+        display: table-cell;
+        text-align: center;
+      }
+      
+      nav.sub section.row aside.menu > ul > li > a {
+        display: block;
+        padding: 20px 0;
+        font-weight: 100;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ababab;
+        border: 1px solid #dedede;
+        border-width: 1px 0;
+      }
+      
+      nav.sub section.row aside.menu > ul > li.current-menu-parent,
+      nav.sub section.row aside.menu > ul > li.current-menu-item {
+        padding-bottom: 66px;
+      }
+      
+      nav.sub section.row aside.menu > ul:hover > li.current-menu-parent a,
+      nav.sub section.row aside.menu > ul:hover > li.current-menu-item a {
+        color: #ababab;
+        border-bottom-color: #dedede;
+      }
+
+      nav.sub section.row aside.menu ul > li.current-menu-parent > a,
+      nav.sub section.row aside.menu ul > li.current-menu-item > a,
+      nav.sub section.row aside.menu ul > li > ul > li.current-menu-item > a,
+      nav.sub section.row aside.menu ul:hover li:hover > a {
+        color: #000;
+        border-bottom-color: #000;
+      }
+
+      nav.sub section.row aside.menu ul:hover > li.current-menu-parent > ul,      
+      nav.sub section.row aside.menu ul:hover > li.current-menu-item > ul,
+      nav.sub section.row aside.menu ul > li > ul {
+        display: none;
+      }
+
+      nav.sub section.row aside.menu ul:hover > li.current-menu-parent:hover > ul,
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul,      
+      nav.sub section.row aside.menu ul:hover > li.current-menu-item:hover > ul,
+      nav.sub section.row aside.menu ul > li.current-menu-item > ul,
+      nav.sub section.row aside.menu ul > li:hover > ul {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border: 1px solid #dedede;
+        border-width: 0 0 1px 0;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav.sub section.row aside.menu ul > li > ul {
+        list-style: none;
+      }
+      
+      nav.sub section.row aside.menu ul > li > ul > li {
+        padding: 0 20px;
+      }
+      
+      nav.sub section.row aside.menu ul > li > ul > li > a {
+        display: block;
+        padding: 20px 0;
+        font-weight: 300;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ababab;
+      }
+
+      nav.sub section.row aside.menu ul:hover > li.current-menu-parent > ul li.current-menu-item a {
+        box-shadow: none;
+      }
+
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul li.current-menu-item a,
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul li.current-menu-item a:hover,
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul li a:hover,
+      nav.sub section.row aside.menu ul > li:hover > ul li a:hover {
+        box-shadow: 0px 1px 0px 0 #000;
+      }
+    
+    /* Main */
+    
+      main > section.crop {
+        padding-bottom: 0;
+      }
+      
+      main > section.workout section.row aside.video img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+      
+      main > section.about section.row article.team {
+        margin: 0;
+        padding: 0 0 20px 0;
+        display: table;
+        text-align: left;
+      }
+
+      main > section.about section.row article.team:last-child {
+        padding: 0;
+      }
+      
+      main > section.about section.row article.team span {
+        display: table-cell;
+      }
+
+      main > section.about section.row article.team span.picture {
+        width: 40px;
+        padding: 0 20px 0 0;
+      }
+      
+      main > section.about section.row article.team span.picture img {
+        width: 40px;
+        height: 40px;
+      }
+
+      main > section.workouts-list{ 
+        margin-bottom:100px;
+      }
+
+    /* Footer */
+    
+      footer .row {
+        align-items: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+      }
+    
+  }
+  
+  @media all and (min-width: 661px) and (max-width: 760px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 15px;
+    }
+    
+    .home header .app-store-button-container{
+      width:661px;
+    }
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 30px;
+        padding: 0 14px;
+        height: 60px;
+      }
+      
+      .btn img.spinner {
+        width: 29px;
+        height: 29px;
+        margin: -14px 0 0 -14px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 18px;
+        padding: 7px 22px;
+      }
+      
+      .btn-secondary span {
+        font-size: 18px;
+      }
+      
+      .btn-secondary i {
+        font-size: 18px;
+        margin: 0 0 0 7px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+     /* header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 146px;
+        word-spacing: -22px;
+      }*/
+      
+      header section.hero div.slides section.row h1 {
+        padding: 0 256px 0 0;
+        font-size: 73px;
+        word-spacing: 0;
+      }
+      header section.hero section.row p,
+      header div.slides p {
+        /*font-size: 22px;*/
+        margin: 0 0 73px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        /*padding: 73px 0;*/
+      }
+
+      header div.slides section.row {
+        width: 90%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -325px;
+        top: 0;
+      }
+    
+    /* Sub Navigation */
+    
+      nav.sub section.row aside.menu > ul > li > a {
+        font-size: 20px;
+      }
+    
+    /* Main */
+    
+      main > section {
+        padding: 73px 0;
+      }
+      
+      main > section.press {
+        padding: 37px 0;
+      }
+      
+      main > section.ready {
+        background-position: 50% 0;
+      }
+      
+      main > section blockquote {
+        text-align: center;
+      }
+      
+      main > section blockquote img {
+        float: none;
+        margin: auto;
+      }
+      
+      main > section blockquote cite {
+        margin: 20px 0 0 0;
+      }
+      
+      main > section p.intro {
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 73px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 44px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 18px;
+        margin: 22px 0 37px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 19px 0;
+      }
+      
+      main > section aside.text > ol li {
+        white-space: nowrap;
+        margin: 19px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        display: inline-block;
+        font-size: 22px;
+      }
+      
+      main > section aside.text > ol li span {
+        display: inline-block;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        width: 50%;
+        text-align: center;
+        padding: 14px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 14px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 44px;
+        margin: 37px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 73px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 22px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 44px;
+        margin: 0 0 37px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 29px;
+        margin: 37px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 37px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 37px 0;
+      }
+      
+      main > section.text-on-image .text-container {
+        margin-top:100px;
+        padding:60px 30px;
+      }
+
+    /* Footer */
+    
+      footer > section {
+        padding: 37px 0;
+      }
+      
+      footer p {
+        font-size: 14px;
+      }
+    
+  }
+  
+  @media all and (min-width: 761px) and (max-width: 860px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 16px;
+    }
+    
+    .home header .app-store-button-container{
+      width:761px;
+    }
+
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 32px;
+        padding: 0 16px;
+        height: 60px;
+      }
+
+      .btn img.spinner {
+        width: 32px;
+        height: 32px;
+        margin: -16px 0 0 -16px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 20px;
+        padding: 8px 24px;
+      }
+      
+      .btn-secondary span {
+        font-size: 20px;
+      }
+      
+      .btn-secondary i {
+        font-size: 20px;
+        margin: 0 0 0 8px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+      /*header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 162px;
+        word-spacing: -24px;
+      }*/
+      
+      header section.hero div.slides section.row h1 {
+        padding: 0 284px 0 0;
+        font-size: 81px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        /*font-size: 24px;*/
+        margin: 0 0 30px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        /*padding: 81px 0;*/
+      }
+
+      header div.slides section.row {
+        width: 90%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -300px;
+        top: 0;
+      }
+      
+    /* Main */
+    
+      main > section {
+        padding: 81px 0;
+      }
+      
+      main > section.press {
+        padding: 41px 0;
+      }
+      
+      main > section.ready {
+        background-position: 50% 0;
+      }
+      
+      main > section blockquote {
+        padding: 0;
+      }
+      
+      main > section p.intro {
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 81px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 44px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 18px;
+        margin: 24px 0 41px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 21px 0;
+      }
+      
+      main > section aside.text > ol li {
+        white-space: nowrap;
+        margin: 21px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        display: inline-block;
+        font-size: 24px;
+      }
+      
+      main > section aside.text > ol li span {
+        display: inline-block;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        width: 50%;
+        text-align: center;
+        padding: 16px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 16px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 49px;
+        margin: 41px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 81px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 24px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 49px;
+        margin: 0 0 41px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 32px;
+        margin: 41px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 41px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 41px 0;
+      }
+
+      main > section.text-on-image .text-container {
+        margin-top:110px;
+        padding:60px 30px;
+      }
+      
+    /* Footer */
+    
+      footer > section {
+        padding: 41px 0;
+      }
+      
+      footer p {
+        font-size: 14px;
+      }
+    
+  }
+  
+  @media all and (min-width: 861px) and (max-width: 960px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 17px;
+    }
+
+    .home header .app-store-button-container{
+      width:861px;
+    }
+    
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 36px;
+        padding: 0 18px;
+        height: 60px;
+      }
+
+      .btn img.spinner {
+        width: 34px;
+        height: 34px;
+        margin: -17px 0 0 -17px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 22px;
+        padding: 9px 27px;
+      }
+      
+      .btn-secondary span {
+        font-size: 22px;
+      }
+      
+      .btn-secondary i {
+        font-size: 22px;
+        margin: 0 0 0 9px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        padding: 0 315px 0 0;
+        font-size: 90px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        margin: 0 0 40px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        /*padding: 90px 0;*/
+      }
+
+      header div.slides section.row {
+        width: 90%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -275px;
+        top: 0;
+      }
+      
+    /* Main */
+    
+      main > section {
+        /*padding: 90px 0;*/
+      }
+      
+      main > section.press {
+        padding: 45px 0;
+      }
+      
+      main > section.ready {
+        background-position: 50% 0;
+      }
+      
+      main > section blockquote {
+        padding: 0 30px;
+      }
+      
+      main > section p.intro {
+        font-size: 22px;
+        margin: 0;
+        padding-bottom: 90px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 54px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 22px;
+        margin: 27px 0 45px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 23px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 23px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        font-size: 27px;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        text-align: center;
+        padding: 0 18px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 18px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 54px;
+        margin: 45px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 90px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 27px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 54px;
+        margin: 0 0 45px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 36px;
+        margin: 45px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 45px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 45px 0;
+      }
+
+      main > section.text-on-image .text-container {
+        margin-top:150px;
+        padding:60px;
+      }
+      
+    /* Footer */
+    
+      footer > section {
+        padding: 45px 0;
+      }
+      
+      footer p {
+        font-size: 15px;
+      }
+    
+  }
+  
+  @media all and (min-width: 961px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 16px;
+    }
+
+    .home header .app-store-button-container{
+      width:961px;
+    }
+    
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 40px;
+        padding: 0 20px;
+        height: 60px;
+      }
+      
+      .btn img.spinner {
+        width: 38px;
+        height: 38px;
+        margin: -19px 0 0 -19px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 24px;
+        padding: 10px 30px;
+      }
+      
+      .btn-secondary span {
+        font-size: 24px;
+      }
+      
+      .btn-secondary i {
+        font-size: 24px;
+        margin: 0 0 0 10px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 70px;
+        color:#fff;
+        line-height: 0.5;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 20px;
+        margin: 20px 0 40px 0;
+      }
+      
+      /*header section.hero section.row,
+      header div.slides section.row {
+        padding: 200px 0 0 0;
+      }*/
+
+      header div.slides section.row {
+        width: 912px;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -250px;
+        top: 0;
+      }
+      
+    /* Main */
+    
+      main > section {
+        /*padding: 100px 0;*/
+      }
+      
+      main > section.press {
+        padding: 50px 0;
+      }
+      
+      main > section blockquote {
+        padding: 0 90px;
+      }
+      
+      main > section p.intro {
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 100px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 50px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 16px;
+        margin: 25px 0 50px 0;
+        font-weight: 300;
+      }
+
+      main > section aside.text > ol {
+        padding: 25px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 25px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        font-size: 30px;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        text-align: center;
+        padding: 0 20px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 20px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 60px;
+        margin: 50px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 50px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 18px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 60px;
+        margin: 0 0 50px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 40px;
+        margin: 50px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 50px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 50px 0;
+      }
+
+    /* Footer */
+    
+      footer > section {
+        padding: 40px 0;
+      }
+
+  }
+
+
+/* Animations */
+
+  header section.hero section.row aside img.picture,
+  header div.slides div.slick-list div.slick-track div.slick-active img.picture,
+  main > section.thanks img {
+    -webkit-animation: fadeInUp 0.5s ease-out;
+    -moz-animation: fadeInUp 0.5s ease-out;
+    animation: fadeInUp 0.5s ease-out;
+  }
+
+  @-webkit-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  @-moz-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -moz-transform: translateY(0);
+    }
+  }
+  @-ms-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -ms-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -ms-transform: translateY(0);
+    }
+  }
+  @-o-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -o-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -o-transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* Retina */
+
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+
+    main > section.press-logos ul li {
+      background: url(../images/press%402x.png) 0 0 / cover no-repeat;
+    }
+  
+  }

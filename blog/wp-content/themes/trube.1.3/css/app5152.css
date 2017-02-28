@@ -1,0 +1,2457 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+html,
+body,
+label,
+input,
+textarea,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+ol,
+blockquote {
+  font-family: "museo-sans-rounded", sans-serif;
+  font-weight: 100;
+  color: #000000;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* Headers */
+  
+  h1,
+  h2 {
+    font-family: "alternate-gothic-no-1-d", impact;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  h3 {
+    font-weight: 500;
+  }
+
+/* Links & Buttons */
+
+  a {
+    font-weight: 300;
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  .btn {
+    position: relative;
+    display: inline-block;
+    font-family: "alternate-gothic-no-1-d", impact;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e74f3a;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  .btn:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  .btn i {
+    font-style: normal;
+  }
+  
+  .btn img.spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .btn.loading i {
+    visibility: hidden;
+  }
+  
+  .btn.loading img.spinner {
+    display: block;
+  }
+  
+  .btn-secondary {
+    font-family: "museo-sans-rounded", sans-serif;
+    display: inline-block;
+    border: 1px solid #e74f3a;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: none;
+    background: #fff;
+  }
+  
+  .btn-secondary:hover {
+    border-color: #000;
+    background: #fff;
+  }
+  
+  .btn-secondary:hover span,
+  .btn-secondary:hover i {
+    color: #000;
+  }
+  
+  .btn-secondary span {
+    font-weight: 300;
+    vertical-align: middle;
+    color: #e74f3a;
+  }
+  
+  .btn-secondary i {
+    vertical-align: middle;
+    color: #e74f3a;
+  }
+
+/* Forms */
+
+  form h3 {
+    position: relative;
+    margin: 50px 0 0 0;
+  }
+  
+  form h3 span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    color: #787878;
+    padding-right: 10px;
+  }
+  
+  form h3:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #dedede;
+  }
+
+  form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form ul li {
+    margin: 20px 0;
+  }
+  
+  form ul li label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+  }
+  
+  form ul li label span.limit {
+    float: right;
+    color: #787878;
+    font-size: 13px;
+  }
+  
+  form ul li label span.limit_error {
+    color: #e74f3a;
+    font-weight: 600;
+  }
+  
+  form ul li input[type=text],
+  form ul li input[type=email],
+  form ul li input[type=tel],
+  form ul li input[type=date],
+  form ul li input[type=number],
+  form ul li input[type=password],
+  form ul li textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 2.8rem;
+  }
+  
+  form ul li input[type=number]::-webkit-outer-spin-button,
+  form ul li input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  form ul li input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  form ul li textarea {
+    height: 400px;
+  }
+  
+  form ul li textarea.short {
+    height: 110px;
+  }
+  
+  form button {
+    vertical-align: middle;
+  }
+  
+  form ul li.date section {
+    display: table;
+    width: 100%;
+  }
+  
+  form ul li.date section aside {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+  }
+  
+  form ul li.date section aside.month {
+    width: 50%;
+    padding: 0;
+  }
+  
+  form ul li.date section aside.day,
+  form ul li.date section aside.year {
+    width: 25%;
+  }
+  
+  form ul li.inline {
+    display: table;
+  }
+  
+  form ul li.inline aside {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 20px;
+  }
+
+  form ul li.inline aside:first-child {
+    padding: 0;
+  }
+  
+  form ul li.inline aside label {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    font-size: 18px;
+    font-weight: 100;
+    vertical-align: middle;
+  }
+  
+  div.selector {
+    position: relative;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;    
+    margin: 0;
+    height: 2.8rem;
+    width: 100%!important;
+    cursor: pointer;
+  }
+  
+  div.selector span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2.8rem;
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  
+  div.selector select {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    width: 100% !important;
+    -webkit-appearance: menulist-button;
+    border: none;
+  }
+  
+  div.selector i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    bottom: 0;
+    font-size: 12px;
+    margin: -6px 0 0 0;
+  }
+
+  .error {
+    border-color: #e74f3a!important;
+    box-shadow: inset 0 0 0 1px #e74f3a;
+  }
+  
+  .message {
+    display: block;
+    vertical-align: middle;
+    padding: 20px 0 0 0;
+    color: #e74f3a;
+    font-weight: 500;
+  }
+
+/* Cookies */
+
+  .cookies {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+  }
+  
+  .cookies a {
+    color: #fff;
+  }
+  
+  .cookies button {
+    display: inline-block;
+    padding: 0 10px;
+    border: none;
+    background: #787878;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 10px;
+  }
+
+/* Header */
+
+  header {
+    background: #efefef url(../images/shattered.png);
+  }
+  
+  header nav {
+    background: #efefef url(../images/shattered.png);
+    border-bottom: 1px solid rgba(255,255,255,1);
+  }
+  
+  header .is-sticky nav {
+    border-bottom-color: #fff;
+    z-index: 100;
+  }
+  
+  header nav section.row aside.logo a {
+    display: table-cell;
+  }
+  
+  header nav section.row aside.logo a img {
+    display: block;
+  }
+  
+  header section.hero section.row {
+    position: relative;
+  }
+  
+  header section.hero section.row p {
+    color: #787878;
+  }
+  
+  header section.hero section.row a {
+    display: table-cell;
+  }
+  
+  header section.hero section.row a.btn {
+    display: inline-block;
+  }
+
+  header section.hero section.row a img {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  
+  header section.hero section.row aside img.picture,
+  header div.slides img.picture {
+    position: absolute;
+  }
+  
+  .slick-initialized .slick-slide {
+    overflow: hidden;
+  }
+  
+  header nav .row .nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+/* Main */
+
+  main {
+    position: relative;
+    box-shadow: 0 0px 0 1px #fff;
+  }
+
+  main > section {
+    box-shadow: inset 0 1px 0 0 rgba(0,0,0,.1);
+  }
+  
+  main > section:first-child {
+    box-shadow: none;
+  }
+  
+  main > section.ready {
+    background: #e6e5db url(../images/user-ready.html) 0 0 / cover no-repeat;
+  }
+  
+  main > section.big {
+    padding: 200px 0;
+  }
+  
+  main > section.big {
+    display: none;
+  }
+  
+  main > section blockquote {
+    margin: 0;
+  }
+  
+  main > section blockquote img {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 30px 0 0;
+    float: left;
+  }
+  
+  main > section blockquote p {
+    font-size: 16px;
+    color: #787878;
+    margin: 5px 0;
+  }
+  
+  main > section blockquote cite {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+  }
+  
+  main > section p.intro {
+    text-align: center;
+  }
+  
+  main > section aside.picture img {
+    display: block;
+    width: 100%;
+    max-width: 399px;
+    height: auto;
+    margin: auto;
+  }
+  
+  main > section aside.text > ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: li;
+  }
+
+  main > section aside.text > ol li {
+    display: table;
+    width: 100%;
+  }
+  
+  main > section aside.text > ol li::before {
+    counter-increment: li;
+    content: counter(li);
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #b9b9b9;
+    border-radius: 100%;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #b9b9b9;
+  }
+
+  main > section aside.text > ol li span {  
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  main > section aside.text > ol li span img,
+  main > section aside.text > ol li span h3,
+  main > section aside.text > ol li span p {
+    margin: 0 0 0 20px;
+    font-size: 16px;
+  }
+
+  main > section aside.text > ol li span p {  
+    color: #787878;
+  }
+  
+  main > section.contact section.row,
+  main > section.about section.row {
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+  }
+  
+  main > section.contact section.row h3,
+  main > section.contact section.row p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  main > section.contact section.row p {
+    margin: 0 0 30px 0;
+    color: #787878;
+  }
+
+  main > section.contact section.row p a {
+    color: #787878;
+    font-weight: 100;
+  }
+  
+  main > section.contact section.row ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+    display: table;
+  }
+  
+  main > section.contact section.row ul.social li {
+    display: table-cell;
+    padding: 0 10px 0 0;
+  }
+  
+  main > section.contact section.row ul.social li a {
+    text-decoration: none;
+    border: 1px solid #b9b9b9;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    text-indent: 5px;
+  }
+
+  main > section.about section.row article.team {
+    margin: 0 0 90px 0;
+    text-align: center;
+  }
+  
+  main > section.about section.row article.team span {
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+  }
+
+  main > section.about section.row article.team span.picture {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  main > section.about section.row article.team span.picture img {
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  main > section.about section.row article.team span.text p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #787878;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
+  main > section.about section.row article.team span h3 {
+    font-weight: 600;
+  }
+  
+  main > section.about section.row article.team span h4 {
+    font-weight: 500;
+  }
+  
+  main > section.about section.row article.team span h3,
+  main > section.about section.row article.team span h4 {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  main > section.about section.row article.team span h4 {  
+    color: #787878;
+  }
+  
+  main > section.benefits section.row aside.benefit p {
+    color: #787878;
+  }
+  
+  main > section.basic ul li {
+    margin: 1em 0;
+  }
+  
+  main > section.workout section.row {
+    align-items: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+  }
+  
+  main > section.workout section.row aside.video img {
+    display: block;
+  }
+  
+  main > section.workout section.row aside.video .container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+  }
+
+  main > section.workout section.row aside.video .container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  main > section.workout section.row ul {
+    padding: 0 0 0 15px;
+  }
+  
+  main > section.workout section.row aside.details p,
+  main > section.workout section.row aside.details ul li {
+    color: #787878;
+  }
+  
+  main > section.workout section.row h2:first-child,
+  main > section.contact section.row h2:first-child,
+  main > section.about section.row h2:first-child {
+    margin-top: 0;
+  }
+  
+  main > section.filter {
+    position: relative;
+  }
+  
+  main > section.filter p {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  main > section.filter p span {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff;
+    font-size: 14px;
+    color: #787878;
+  }
+  
+  main > section.filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+  }
+  
+  .ie9 main > section.filter ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  main > section.filter ul li {
+    text-align: center;
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+  }
+  
+  .ie9 main > section.filter ul li {
+    display: table-cell;
+  }
+
+  main > section.filter ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  main > section.filter ul li a img {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  
+  main > section.filter ul li a span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  main > section.empty {
+    display: none;
+    text-align: center;
+  }
+
+  main > section.trainer {
+    box-shadow: none;
+  }
+
+  main > section.trainer > img.spinner {
+    display: block;
+    margin: auto;
+  }
+
+  main > section.empty section.row,
+  main > section.trainer section.group section.row {
+    padding: 25px 0;
+  }
+  
+  main > section.empty section.row h2,
+  main > section.trainer section.group section.row h2 {
+    font-size: 40px;
+  }
+
+  main > section.empty section.row p,  
+  main > section.trainer section.group section.row p {
+    font-size: 16px;
+  }
+  
+  main > section.trainer section.group section.row img {
+    border-radius: 100%;
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    margin: auto;
+  }
+  
+  main > section.more {
+    box-shadow: none;
+    padding-top: 0;
+    text-align: center;
+  }
+
+/* Footer */
+
+  footer {
+    position: relative;
+    box-shadow: inset 0 1px 0 0 rgba(0,0,0,.1);
+  }
+
+  footer p {
+    margin: 50px 0 0 0;
+    color: #787878;
+  }
+  
+  footer p a {
+    color: #787878;
+    font-weight: 100;
+    margin: 0 5px;
+  }
+  
+  footer h4 {
+    color: #787878;
+  }
+  
+  footer h4,
+  footer ul li,
+  footer ul li span {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer ul li {
+    margin: 10px 0;
+  }
+  
+  footer ul li.menu-item-object-category {
+    display: none;
+  }
+  
+  footer ul.social li a {
+    text-decoration: none;
+  }
+  
+  footer ul.social li a i {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+  }
+  
+  footer ul.social li a span {
+    text-decoration: underline;
+  }
+  
+  footer span.logo,
+  footer span.tagline {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  footer span.logo img {
+    display: block;
+  }
+
+  footer span.tagline {
+    padding: 0 0 0 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+/* Responsive */
+
+  @media all and (max-width: 660px) {
+      
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 16px;
+    }
+    
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 27px;
+        padding: 0px 10px;
+        height: 40px;
+      }
+      
+      .btn img.spinner {
+        width: 27px;
+        height: 27px;
+        margin: -14px 0 0 -14px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 18px;
+        padding: 7px 22px;
+      }
+      
+      .btn-secondary span {
+        font-size: 18px;
+      }
+      
+      .btn-secondary i {
+        font-size: 18px;
+        margin: 0 0 0 7px;
+      }
+      
+      .download {
+        height: 40px;
+      }
+
+    /* Links */
+    
+      form ul li input[type=text],
+      form ul li input[type=email],
+      form ul li input[type=tel],
+      form ul li input[type=date],
+      form ul li input[type=number],
+      form ul li input[type=password],
+      form ul li textarea {
+        padding: 10px;
+      }
+    
+      form ul li textarea {
+        height: 200px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 80px;
+        word-spacing: -10px;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 20px;
+        margin: 0 0 30px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        padding: 30px;
+      }
+
+      header div.slides section.row {
+        width: 100%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        display: none;
+        position: static;
+        width: 100%;
+        margin-bottom: -30px;
+      }
+    
+    /* Navigation */
+    
+      header nav .row {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        position: relative;
+        width: 100%;
+      }
+      
+      header nav .row label[for="nav-trigger"] {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 2;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        background: url(../images/menu.svg) 0 0 / contain no-repeat;
+      }
+      
+      header nav .row .nav-trigger:checked ~ aside.menu {
+        display: block!important;
+      }
+      
+      header nav .row .nav-trigger:checked + label {
+        background: url(../images/menu-close.svg) 0 0 / contain no-repeat;
+      }
+  
+      header nav .row aside.logo {
+        width: 100%;
+        padding: 20px;
+      }
+      
+      header nav .row aside.menu {
+        display: none;
+        background: #000;
+        width: 100%;
+      }
+      
+      header nav .row aside.menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header nav .row aside.menu ul li {
+        text-align: center;
+      }
+      
+      header nav .row aside.menu ul li a {
+        display: block;
+        padding: 20px 0;
+        color: #fff;
+        text-decoration: none;
+        border-top: 1px solid #282828;
+      }
+    
+    /* Sub Navigation */
+    
+      nav.sub {
+        text-align: center;
+      }
+      
+      nav.sub section.row aside.logo {
+        text-align: center;
+        padding: 30px 0 0 0;
+      }
+      
+      nav.sub section.row aside.logo a img {
+        display: block;
+        margin: auto;
+      }
+      
+      nav.sub section.row aside.search div.widget_search form {
+        margin: 30px;
+        margin-bottom: 1px;
+      }
+
+      nav.sub section.row aside.menu ul {
+        display: none;
+      }
+    
+    /* Main */
+    
+      main > section {
+        padding: 30px;
+      }
+      
+      main > section.crop {
+        padding-bottom: 0;
+      }
+      
+      main > section.press {
+        padding: 50px 0;
+      }
+      
+      main > section aside.message {
+        padding: 0;
+      }
+      
+      main > section blockquote {
+        text-align: center;
+      }
+      
+      main > section blockquote img {
+        float: none;
+        margin: auto;
+      }
+      
+      main > section blockquote cite {
+        margin: 20px 0 0 0;
+      }
+    
+      main > section p.intro {
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 30px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 44px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 18px;
+        margin: 10px 0 30px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 15px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 15px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        font-size: 20px;
+        width: 50px;
+        line-height: 50px;
+      }
+      
+      main > section.about section.row article.team,
+      main > section.benefits section.row aside.benefit {
+        text-align: center;
+        padding: 20px;
+      }
+      
+      main > section.about section.row article.team {
+        margin: 15px 0;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 20px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 40px;
+        margin: 25px 0;
+      }
+
+      main > section.ready {
+        background-image: none;
+      }
+      
+      main > section.ready aside:empty {
+        display: none;
+      }
+    
+      main > section.thanks section.row h1 {
+        font-size: 40px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 20px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 40px;
+        margin: 0 0 25px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 30px;
+        margin: 25px 0;
+      }
+
+      main > section.workout section.row aside.details {
+        margin: 30px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.workout aside:empty {
+        display: none;
+      }
+      
+      main > section.workout section.row aside.video img {
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+      }
+      
+      main > section.filter ul {
+        flex-direction: column;
+      }
+      
+      main > section.filter ul li a img {
+        display: none;
+      }
+
+      main > section.filter ul li a span {
+        display: block;
+        padding: 10px 0;
+      }
+      
+    /* Footer */
+    
+      footer > section {
+        padding: 30px;
+      }
+      
+      footer p {
+        font-size: 16px;
+        margin: 30px 0 0 0;
+      }
+      
+      footer p a {
+        margin: 0;
+      }
+      
+      footer aside {
+        margin: 30px 0 0 0;
+      }
+      
+      footer aside:empty {
+        display: none;
+      }
+
+      footer aside:first-child {
+        margin: 0;
+      }
+    
+  }
+  
+  @media all and (min-width: 361px) and (max-width: 460px) {
+    
+    /* Header */
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 92px;
+        word-spacing: -15px;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        font-size: 59px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 20px;
+      }
+      
+    /* Main */
+    
+      main > section.thanks section.row h1 {
+        font-size: 73px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 20px;
+      }
+    
+  }
+  
+  @media all and (min-width: 461px) and (max-width: 560px) {
+    
+    /* Header */
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 128px;
+        word-spacing: -19px;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        font-size: 66px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 20px;
+      }
+      
+    /* Main */
+    
+      main > section.thanks section.row h1 {
+        font-size: 81px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 20px;
+      }
+    
+  }
+  
+  @media all and (min-width: 561px) and (max-width: 660px) {
+    
+    /* Header */
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 160px;
+        word-spacing: -24px;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        font-size: 73px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 24px;
+      }
+      
+    /* Main */
+    
+      main > section.thanks section.row h1 {
+        font-size: 90px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 22px;
+      }
+    
+  }
+  
+  @media all and (min-width: 661px) {
+    
+    /* Forms */
+    
+      .message {
+        display: inline-block;
+        padding: 0 20px;
+      }
+    
+    /* Header */
+    
+      header div.slides section.row {
+        margin: auto;
+        position: relative;
+      }
+    
+    /* Navigation */
+    
+      header nav {
+        padding: 25px 0;
+      }
+
+      header nav section.row aside.menu ul {
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      header nav section.row aside.menu ul li {
+        display: inline;
+        margin: 0 0 0 20px;
+      }
+      
+      header nav section.row aside.menu ul li.menu-item-object-category {
+        display: none;
+      }
+      
+      header nav section.row aside.menu ul li a {
+        font-size: 15px;
+        color: #787878;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      
+      header nav section.row aside.menu ul li.normal a {
+        text-transform: none;
+      }
+    
+    /* Sub Navigation */
+      
+      nav.sub {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 1px;
+      }
+
+      nav.sub section.row aside.social {
+        text-align: right;
+      }
+      
+      nav.sub section.row aside.social ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        vertical-align: middle;
+      }
+
+      nav.sub section.row aside.social ul li {
+        display: table-cell;
+      }
+
+      nav.sub section.row aside.social ul li a {
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #b9b9b9;
+        width: 47px;
+        height: 47px;
+        line-height: 50px;
+        font-size: 24px;
+        text-align: center;
+        border-radius: 100px;
+        color: #787878;
+      }
+
+      nav.sub section.row aside.social ul li a i {
+        margin: 0 -5px 0 0;
+      }
+      
+      nav.sub section.row aside.social ul li a span {
+        display: none;
+      }
+      
+      nav.sub section.row aside.logo {
+        text-align: center;
+        padding: 30px 0;
+      }
+      
+      nav.sub section.row aside.logo a img {
+        display: block;
+        height: 100px;
+      }
+      
+      nav.sub section.row aside.menu {
+        position: relative;
+      }
+      
+      nav.sub section.row aside.menu > ul {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav.sub section.row aside.menu > ul > li {
+        display: table-cell;
+        text-align: center;
+      }
+      
+      nav.sub section.row aside.menu > ul > li > a {
+        display: block;
+        padding: 20px 0;
+        font-weight: 100;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ababab;
+        border: 1px solid #dedede;
+        border-width: 1px 0;
+      }
+      
+      nav.sub section.row aside.menu > ul > li.current-menu-parent,
+      nav.sub section.row aside.menu > ul > li.current-menu-item {
+        padding-bottom: 66px;
+      }
+      
+      nav.sub section.row aside.menu > ul:hover > li.current-menu-parent a,
+      nav.sub section.row aside.menu > ul:hover > li.current-menu-item a {
+        color: #ababab;
+        border-bottom-color: #dedede;
+      }
+
+      nav.sub section.row aside.menu ul > li.current-menu-parent > a,
+      nav.sub section.row aside.menu ul > li.current-menu-item > a,
+      nav.sub section.row aside.menu ul > li > ul > li.current-menu-item > a,
+      nav.sub section.row aside.menu ul:hover li:hover > a {
+        color: #000;
+        border-bottom-color: #000;
+      }
+
+      nav.sub section.row aside.menu ul:hover > li.current-menu-parent > ul,      
+      nav.sub section.row aside.menu ul:hover > li.current-menu-item > ul,
+      nav.sub section.row aside.menu ul > li > ul {
+        display: none;
+      }
+
+      nav.sub section.row aside.menu ul:hover > li.current-menu-parent:hover > ul,
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul,      
+      nav.sub section.row aside.menu ul:hover > li.current-menu-item:hover > ul,
+      nav.sub section.row aside.menu ul > li.current-menu-item > ul,
+      nav.sub section.row aside.menu ul > li:hover > ul {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border: 1px solid #dedede;
+        border-width: 0 0 1px 0;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav.sub section.row aside.menu ul > li > ul {
+        list-style: none;
+      }
+      
+      nav.sub section.row aside.menu ul > li > ul > li {
+        padding: 0 20px;
+      }
+      
+      nav.sub section.row aside.menu ul > li > ul > li > a {
+        display: block;
+        padding: 20px 0;
+        font-weight: 300;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ababab;
+      }
+
+      nav.sub section.row aside.menu ul:hover > li.current-menu-parent > ul li.current-menu-item a {
+        box-shadow: none;
+      }
+
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul li.current-menu-item a,
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul li.current-menu-item a:hover,
+      nav.sub section.row aside.menu ul > li.current-menu-parent > ul li a:hover,
+      nav.sub section.row aside.menu ul > li:hover > ul li a:hover {
+        box-shadow: 0px 1px 0px 0 #000;
+      }
+    
+    /* Main */
+    
+      main > section.crop {
+        padding-bottom: 0;
+      }
+      
+      main > section.workout section.row aside.video img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+      
+      main > section.about section.row article.team {
+        margin: 0;
+        padding: 0 0 20px 0;
+        display: table;
+        text-align: left;
+      }
+
+      main > section.about section.row article.team:last-child {
+        padding: 0;
+      }
+      
+      main > section.about section.row article.team span {
+        display: table-cell;
+      }
+
+      main > section.about section.row article.team span.picture {
+        width: 40px;
+        padding: 0 20px 0 0;
+      }
+      
+      main > section.about section.row article.team span.picture img {
+        width: 40px;
+        height: 40px;
+      }
+    
+    /* Footer */
+    
+      footer .row {
+        align-items: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+      }
+    
+  }
+  
+  @media all and (min-width: 661px) and (max-width: 760px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 15px;
+    }
+    
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 30px;
+        padding: 0 14px;
+        height: 44px;
+      }
+      
+      .btn img.spinner {
+        width: 29px;
+        height: 29px;
+        margin: -14px 0 0 -14px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 18px;
+        padding: 7px 22px;
+      }
+      
+      .btn-secondary span {
+        font-size: 18px;
+      }
+      
+      .btn-secondary i {
+        font-size: 18px;
+        margin: 0 0 0 7px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 146px;
+        word-spacing: -22px;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        padding: 0 256px 0 0;
+        font-size: 73px;
+        word-spacing: 0;
+      }
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 22px;
+        margin: 0 0 73px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        padding: 73px 0;
+      }
+
+      header div.slides section.row {
+        width: 90%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -325px;
+        top: 0;
+      }
+    
+    /* Sub Navigation */
+    
+      nav.sub section.row aside.menu > ul > li > a {
+        font-size: 20px;
+      }
+    
+    /* Main */
+    
+      main > section {
+        padding: 73px 0;
+      }
+      
+      main > section.press {
+        padding: 37px 0;
+      }
+      
+      main > section.ready {
+        background-position: 50% 0;
+      }
+      
+      main > section blockquote {
+        text-align: center;
+      }
+      
+      main > section blockquote img {
+        float: none;
+        margin: auto;
+      }
+      
+      main > section blockquote cite {
+        margin: 20px 0 0 0;
+      }
+      
+      main > section p.intro {
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 73px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 44px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 18px;
+        margin: 22px 0 37px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 19px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 19px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        font-size: 22px;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        width: 50%;
+        text-align: center;
+        padding: 14px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 14px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 44px;
+        margin: 37px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 73px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 22px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 44px;
+        margin: 0 0 37px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 29px;
+        margin: 37px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 37px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 37px 0;
+      }
+      
+    /* Footer */
+    
+      footer > section {
+        padding: 37px 0;
+      }
+      
+      footer p {
+        font-size: 14px;
+      }
+    
+  }
+  
+  @media all and (min-width: 761px) and (max-width: 860px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 16px;
+    }
+    
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 32px;
+        padding: 0 16px;
+        height: 49px;
+      }
+
+      .btn img.spinner {
+        width: 32px;
+        height: 32px;
+        margin: -16px 0 0 -16px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 20px;
+        padding: 8px 24px;
+      }
+      
+      .btn-secondary span {
+        font-size: 20px;
+      }
+      
+      .btn-secondary i {
+        font-size: 20px;
+        margin: 0 0 0 8px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 162px;
+        word-spacing: -24px;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        padding: 0 284px 0 0;
+        font-size: 81px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 24px;
+        margin: 0 0 81px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        padding: 81px 0;
+      }
+
+      header div.slides section.row {
+        width: 90%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -300px;
+        top: 0;
+      }
+      
+    /* Main */
+    
+      main > section {
+        padding: 81px 0;
+      }
+      
+      main > section.press {
+        padding: 41px 0;
+      }
+      
+      main > section.ready {
+        background-position: 50% 0;
+      }
+      
+      main > section blockquote {
+        padding: 0;
+      }
+      
+      main > section p.intro {
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 81px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 44px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 18px;
+        margin: 24px 0 41px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 21px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 21px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        font-size: 24px;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        width: 50%;
+        text-align: center;
+        padding: 16px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 16px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 49px;
+        margin: 41px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 81px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 24px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 49px;
+        margin: 0 0 41px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 32px;
+        margin: 41px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 41px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 41px 0;
+      }
+      
+    /* Footer */
+    
+      footer > section {
+        padding: 41px 0;
+      }
+      
+      footer p {
+        font-size: 14px;
+      }
+    
+  }
+  
+  @media all and (min-width: 861px) and (max-width: 960px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 17px;
+    }
+    
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 36px;
+        padding: 0 18px;
+        height: 54px;
+      }
+
+      .btn img.spinner {
+        width: 34px;
+        height: 34px;
+        margin: -17px 0 0 -17px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 22px;
+        padding: 9px 27px;
+      }
+      
+      .btn-secondary span {
+        font-size: 22px;
+      }
+      
+      .btn-secondary i {
+        font-size: 22px;
+        margin: 0 0 0 9px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 180px;
+        word-spacing: -27px;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        padding: 0 315px 0 0;
+        font-size: 90px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 27px;
+        margin: 0 0 90px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        padding: 90px 0;
+      }
+
+      header div.slides section.row {
+        width: 90%;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -275px;
+        top: 0;
+      }
+      
+    /* Main */
+    
+      main > section {
+        padding: 90px 0;
+      }
+      
+      main > section.press {
+        padding: 45px 0;
+      }
+      
+      main > section.ready {
+        background-position: 50% 0;
+      }
+      
+      main > section blockquote {
+        padding: 0 30px;
+      }
+      
+      main > section p.intro {
+        font-size: 22px;
+        margin: 0;
+        padding-bottom: 90px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 54px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 22px;
+        margin: 27px 0 45px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 23px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 23px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        font-size: 27px;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        text-align: center;
+        padding: 0 18px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 18px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 54px;
+        margin: 45px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 90px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 27px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 54px;
+        margin: 0 0 45px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 36px;
+        margin: 45px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 45px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 45px 0;
+      }
+      
+    /* Footer */
+    
+      footer > section {
+        padding: 45px 0;
+      }
+      
+      footer p {
+        font-size: 15px;
+      }
+    
+  }
+  
+  @media all and (min-width: 961px) {
+    
+    html,
+    body,
+    label,
+    input,
+    textarea,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    blockquote {
+      font-size: 18px;
+    }
+    
+    /* Links & Buttons */
+    
+      .btn {
+        font-size: 40px;
+        padding: 0 20px;
+        height: 60px;
+      }
+      
+      .btn img.spinner {
+        width: 38px;
+        height: 38px;
+        margin: -19px 0 0 -19px;
+      }
+      
+      .btn-secondary {
+        height: auto;
+        font-size: 24px;
+        padding: 10px 30px;
+      }
+      
+      .btn-secondary span {
+        font-size: 24px;
+      }
+      
+      .btn-secondary i {
+        font-size: 24px;
+        margin: 0 0 0 10px;
+      }
+
+    /* Header */
+      
+      header section.hero {
+        overflow: hidden;
+      }
+
+      header section.hero section.row h1,
+      header div.slides h1 {
+        font-size: 200px;
+        word-spacing: -30px;
+      }
+      
+      header section.hero div.slides section.row h1 {
+        padding: 0 350px 0 0;
+        font-size: 100px;
+        word-spacing: 0;
+      }
+      
+      header section.hero section.row p,
+      header div.slides p {
+        font-size: 30px;
+        margin: 0 0 100px 0;
+      }
+      
+      header section.hero section.row,
+      header div.slides section.row {
+        padding: 100px 0;
+      }
+
+      header div.slides section.row {
+        width: 912px;
+      }
+      
+      header section.hero section.row aside img.picture,
+      header div.slides img.picture {
+        right: -250px;
+        top: 0;
+      }
+      
+    /* Main */
+    
+      main > section {
+        padding: 100px 0;
+      }
+      
+      main > section.press {
+        padding: 50px 0;
+      }
+      
+      main > section blockquote {
+        padding: 0 90px;
+      }
+      
+      main > section p.intro {
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 100px;
+      }
+      
+      main > section p.intro-basic {
+        padding: 0;
+      }
+    
+      main > section aside.text h2 {
+        font-size: 60px;
+      }
+      
+      main > section aside.text > p {
+        font-size: 24px;
+        margin: 30px 0 50px 0;
+      }
+
+      main > section aside.text > ol {
+        padding: 25px 0;
+      }
+      
+      main > section aside.text > ol li {
+        margin: 25px 0;
+      }
+      
+      main > section aside.text > ol li::before {
+        font-size: 30px;
+      }
+      
+      main > section.benefits section.row aside.benefit {
+        text-align: center;
+        padding: 0 20px;
+      }
+      
+      main > section.benefits section.row aside.benefit h3 {
+        padding: 0 20px;
+      }
+      
+      main > section.benefits section.row aside.benefit p {
+        margin: 0;
+      }
+      
+      main > section.workout section.row h2,
+      main > section.contact section.row h2,
+      main > section.about section.row h2 {
+        font-size: 60px;
+        margin: 50px 0;
+      }
+      
+      main > section.thanks section.row h1 {
+        font-size: 100px;
+      }
+      
+      main > section.thanks section.row p {
+        font-size: 30px;
+      }
+      
+      main > section.basic h1 {
+        font-size: 60px;
+        margin: 0 0 50px 0;
+      }
+      
+      main > section.basic h2 {
+        font-size: 40px;
+        margin: 50px 0;
+      }
+      
+      main > section.workout section.row aside.details {
+        margin: 50px 0 0 0;
+      }
+
+      main > section.workout section.row aside.details h3,
+      main > section.workout section.row aside.details p,
+      main > section.workout section.row aside.details ul li {
+         font-size: 16px;
+      }
+      
+      main > section.filter {
+        padding: 50px 0;
+      }
+
+    /* Footer */
+    
+      footer > section {
+        padding: 50px 0;
+      }
+      
+      footer p {
+        font-size: 16px;
+      }
+
+  }
+
+/* Animations */
+
+  header section.hero section.row aside img.picture,
+  header div.slides div.slick-list div.slick-track div.slick-active img.picture,
+  main > section.thanks img {
+    -webkit-animation: fadeInUp 0.5s ease-out;
+    -moz-animation: fadeInUp 0.5s ease-out;
+    animation: fadeInUp 0.5s ease-out;
+  }
+
+  @-webkit-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  @-moz-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -moz-transform: translateY(0);
+    }
+  }
+  @-ms-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -ms-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -ms-transform: translateY(0);
+    }
+  }
+  @-o-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -o-transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      -o-transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+ div#sidebar-tabs-widget-2 span.comments {
+	 display:none!important;
+ }
