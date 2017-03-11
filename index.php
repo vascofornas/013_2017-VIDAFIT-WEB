@@ -55,10 +55,10 @@ function qcPixelAppClick(){
     <label for="nav-trigger"></label>
   
     <aside class="logo col col-4">
-      <a href="index.html"><img src="images/kaizen/kaizen.png" height="48" data-no-retina></a> 
+      <a href="index.html"><img src="images/kaizen/kaizen.png"  data-no-retina></a>
     </aside>
     
-    <aside class="menu col col-12">
+    <aside class="menu col col-10">
       <ul>
         <li><a href="workouts.html">Workouts</a></li>
         <li><a href="trainers.html">Trainers</a></li>
